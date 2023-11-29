@@ -1,0 +1,66 @@
+/* Sidebar styling */
+.side-bar {
+    -fx-background-color: #191D23;
+}
+
+/* Image styling */
+.image {
+    -fx-effect: dropshadow(gaussian, #009999, 10, 0.7, 0.0, 0.0);
+}
+
+/* HBox styling */
+.hbox {
+    -fx-padding: 10px;
+}
+
+/* HBox hover effect */
+.hbox:hover {
+    -fx-background-color: gray;
+    -fx-opacity: 0.5;
+}
+
+/* Right-side styling */
+.right-side {
+    -fx-background-color: #f2f2f2;
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+}
+
+/* Label text styling */
+.labels {
+    -fx-text-fill: #ffffff;
+}
+
+/* Button hover effect */
+.button:hover {
+    -fx-background-color: gray;
+}
+
+/* Scene styling */
+.scene {
+    -fx-background-color: #191D23;
+}
+
+/* Card styling */
+.card {
+    -fx-background-color: #4d4d4d;
+    -fx-opacity: 0.8;
+    -fx-effect: dropshadow(gaussian, black, 5, 0.5, 0.0, 0.0);
+}
+
+/* Input field styling */
+.input {
+    -fx-background-color: #4d4d4d;
+    -fx-text-fill: #ffffff;
+}
+
+/* Input field hover effect */
+.input:hover {
+    -fx-effect: dropshadow(gaussian, black, 5, 0.5, 0.0, 0.0);
+}

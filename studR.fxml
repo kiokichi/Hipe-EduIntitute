@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentController">
+   <left>
+      <VBox fx:id="sideBar" alignment="CENTER" prefHeight="670.0" prefWidth="228.0" spacing="10.0" styleClass="side-bar" stylesheets="@application.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="53.0" prefWidth="228.0" styleClass="hbox">
+               <children>
+                  <ImageView fitHeight="52.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" styleClass="image">
+                     <image>
+                        <Image url="@png/menu_359427.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" text="Student" textFill="#fffefe">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+            <Line endX="100.0" layoutX="140.0" layoutY="596.0" startX="-129.26405334472656" startY="0.5929298400878906" stroke="#ffe6e6" styleClass="image" />
+            <HBox layoutX="10.0" layoutY="244.0" prefHeight="53.0" prefWidth="228.0" style="-fx-background-color: gray;" styleClass="hbox">
+               <children>
+                  <ImageView fitHeight="43.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" styleClass="image">
+                     <image>
+                        <Image url="@png/bored_7326311.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="button" mnemonicParsing="false" prefHeight="26.0" prefWidth="88.0" styleClass="Button" stylesheets="@application.css" text="Student">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="345.0" prefHeight="53.0" prefWidth="228.0" styleClass="hbox">
+               <children>
+                  <ImageView fitHeight="43.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/novel_10558792.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" styleClass="Button" stylesheets="@application.css" text="Course">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="372.0" prefHeight="53.0" prefWidth="228.0" styleClass="hbox">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/calendar_9254446.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#SwitchTobatch" prefHeight="26.0" prefWidth="86.0" styleClass="Button" stylesheets="@application.css" text="Batch">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="399.0" prefHeight="53.0" prefWidth="228.0" styleClass="hbox">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/audience_2433188.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="79.0" styleClass="Button" stylesheets="@application.css" text="Staff">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="right-side" stylesheets="@application.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutX="10.0" layoutY="10.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="546.0" style="-fx-background-color: #191D23;">
+               <children>
+                  <Button fx:id="closebutton" mnemonicParsing="false" onAction="#CloseScene" prefHeight="33.0" prefWidth="52.0" styleClass="Button" stylesheets="@application.css">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@png/close_9082315.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#SwitchToStudent" styleClass="Button">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@png/backward_6499032.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="774.0" prefWidth="769.0" styleClass="scene">
+               <children>
+                  <AnchorPane prefHeight="763.0" prefWidth="713.0" styleClass="scene">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <AnchorPane layoutX="12.0" layoutY="16.0" maxWidth="716.0" prefHeight="731.0" prefWidth="716.0" styleClass="card">
+                           <children>
+                              <Label layoutX="43.0" layoutY="44.0" styleClass="labels" text="Student Id">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="100.0" layoutY="140.0" styleClass="labels" text="DOB">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="197.0" styleClass="labels" text="College Name">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker fx:id="Sdob" layoutX="167.0" layoutY="140.0" prefHeight="26.0" prefWidth="334.0" />
+                              <TextArea fx:id="textArea1" layoutX="178.0" layoutY="546.0" prefHeight="53.0" prefWidth="340.0" />
+                              <Label layoutX="55.0" layoutY="256.0" styleClass="labels" text="Mobile no.">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="55.0" layoutY="305.0" styleClass="labels" text="Parent no.">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="Smob" layoutX="166.0" layoutY="256.0" prefHeight="26.0" prefWidth="335.0" styleClass="input" />
+                              <TextField fx:id="Pmob" layoutX="166.0" layoutY="305.0" prefHeight="26.0" prefWidth="335.0" styleClass="input" />
+                              <Button fx:id="connectButton" layoutX="278.0" layoutY="642.0" mnemonicParsing="false" onAction="#connectToDatabase" opacity="0.83" prefHeight="31.0" prefWidth="144.0" style="-fx-background-color: #009999; -fx-text-fill: black;" styleClass="Button" text="Done">
+                                 <font>
+                                    <Font name="Century" size="23.0" />
+                                 </font>
+                              </Button>
+                              <Label layoutX="10.0" layoutY="93.0" styleClass="labels" text="Student Name">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="Sname" layoutX="167.0" layoutY="93.0" prefHeight="26.0" prefWidth="334.0" styleClass="input" />
+                              <TextField fx:id="Sid" layoutX="166.0" layoutY="44.0" prefHeight="26.0" prefWidth="334.0" styleClass="input" />
+                              <Button fx:id="ImageImport" layoutX="542.0" layoutY="209.0" mnemonicParsing="false" onAction="#handleImageImport" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: white; -fx-text-fill: black;" text="Import Image" />
+                              <RadioButton layoutX="65.0" layoutY="512.0" mnemonicParsing="false" text="AdharCard" textFill="WHITE" />
+                              <RadioButton layoutX="184.0" layoutY="512.0" mnemonicParsing="false" text="UGMarkmemo" textFill="WHITE" />
+                              <RadioButton layoutX="319.0" layoutY="512.0" mnemonicParsing="false" text="10th TC" textFill="WHITE" />
+                              <RadioButton layoutX="448.0" layoutY="512.0" mnemonicParsing="false" text="Previous Certifications" textFill="WHITE" />
+                              <TextField fx:id="SSC" layoutX="166.0" layoutY="352.0" prefHeight="26.0" prefWidth="335.0" styleClass="input" />
+                              <TextField fx:id="HSC" layoutX="166.0" layoutY="400.0" prefHeight="26.0" prefWidth="335.0" styleClass="input" />
+                              <TextField fx:id="UG" layoutX="166.0" layoutY="448.0" prefHeight="26.0" prefWidth="335.0" styleClass="input" />
+                              <Label layoutX="47.0" layoutY="352.0" styleClass="labels" text="SSC Marks">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="42.0" layoutY="400.0" styleClass="labels" text="HSC Marks">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="48.0" layoutY="446.0" styleClass="labels" text="UG Marks">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="Sclg" layoutX="167.0" layoutY="190.0" prefHeight="46.0" prefWidth="334.0" />
+                              <Label layoutX="16.0" layoutY="554.0" styleClass="labels" text="Documents Path">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="DocumentImport" layoutX="534.0" layoutY="553.0" mnemonicParsing="false" onAction="#handleDocumentImport" prefHeight="26.0" prefWidth="130.0" style="-fx-background-color: white; -fx-text-fill: black;" text="Import Document" />
+                              <Pane fx:id="imageContainer" layoutX="541.0" layoutY="45.0" prefHeight="147.0" prefWidth="115.0" style="-fx-border-color: white;" styleClass="image" stylesheets="@application.css" />
+                           </children>
+                        
+                           
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

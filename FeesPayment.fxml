@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentController">
+   <left>
+      <VBox fx:id="sideBar" alignment="CENTER" prefHeight="670.0" prefWidth="228.0" spacing="10.0" styleClass="side-bar" stylesheets="@application.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="53.0" prefWidth="228.0" styleClass="hbox">
+               <children>
+                  <ImageView fitHeight="52.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" styleClass="image">
+                     <image>
+                        <Image url="@png/menu_359427.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" text="Student" textFill="#fffefe">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+            <Line endX="100.0" layoutX="140.0" layoutY="596.0" startX="-129.26405334472656" startY="0.5929298400878906" stroke="#ffe6e6" styleClass="image" />
+            <HBox layoutX="10.0" layoutY="244.0" prefHeight="53.0" prefWidth="228.0" style="-fx-background-color: gray;" styleClass="hbox">
+               <children>
+                  <ImageView fitHeight="43.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" styleClass="image">
+                     <image>
+                        <Image url="@png/bored_7326311.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="button" mnemonicParsing="false" onAction="#SwitchToStudent" prefHeight="26.0" prefWidth="88.0" styleClass="Button" stylesheets="@application.css" text="Student">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="345.0" prefHeight="53.0" prefWidth="228.0" styleClass="hbox">
+               <children>
+                  <ImageView fitHeight="43.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/novel_10558792.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" styleClass="Button" stylesheets="@application.css" text="Course">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="372.0" prefHeight="53.0" prefWidth="228.0" styleClass="hbox">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/calendar_9254446.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#SwitchTobatch" prefHeight="26.0" prefWidth="86.0" styleClass="Button" stylesheets="@application.css" text="Batch">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="399.0" prefHeight="53.0" prefWidth="228.0" styleClass="hbox">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/audience_2433188.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="79.0" styleClass="Button" stylesheets="@application.css" text="Staff">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="right-side" stylesheets="@application.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutX="10.0" layoutY="10.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="546.0" style="-fx-background-color: #191D23;">
+               <children>
+                  <Button fx:id="closebutton" mnemonicParsing="false" onAction="#CloseScene" prefHeight="33.0" prefWidth="52.0" styleClass="Button" stylesheets="@application.css">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@png/close_9082315.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#SwitchToDashBoard" styleClass="Button">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@png/backward_6499032.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="774.0" prefWidth="769.0" styleClass="scene">
+               <children>
+                  <AnchorPane prefHeight="766.0" prefWidth="769.0">
+                     <children>
+                        <AnchorPane layoutX="81.0" layoutY="424.0" prefHeight="332.0" prefWidth="600.0" style="-fx-cursor: hand;" styleClass="card" stylesheets="@../../../StudentMang/src/application/application.css">
+                           <children>
+                              <Label layoutX="109.0" layoutY="31.0" styleClass="labels" text="Student Name">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="114.0" layoutY="78.0" styleClass="labels" text="Course Name">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="105.0" layoutY="122.0" styleClass="labels" text="1st Installment">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="newstudName" layoutX="257.0" layoutY="30.0" prefHeight="26.0" prefWidth="242.0" styleClass="input" />
+                              <Label layoutX="102.0" layoutY="166.0" styleClass="labels" text="2nd Installment">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="143.0" layoutY="233.0" styleClass="labels" text="Total Fees">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="496.5999755859375" endY="-1.52587890625E-5" layoutX="101.0" layoutY="213.0" startX="-100.0" styleClass="image" />
+                              <Button fx:id="update" layoutX="257.0" layoutY="291.0" mnemonicParsing="false" onAction="#updateStudPayInfo" opacity="0.88" prefHeight="31.0" prefWidth="134.0" style="-fx-background-color: #009999; -fx-text-fill: white;" styleClass="Button" text="fetch Data" />
+                              <TextField fx:id="newSInsta" layoutX="257.0" layoutY="166.0" prefHeight="26.0" prefWidth="242.0" styleClass="input" />
+                              <TextField fx:id="newTFee" layoutX="257.0" layoutY="233.0" prefHeight="26.0" prefWidth="242.0" styleClass="input" />
+                              <TextField fx:id="newcourseName" layoutX="257.0" layoutY="78.0" prefHeight="26.0" prefWidth="242.0" styleClass="input" />
+                              <TextField fx:id="newFInsta" layoutX="257.0" layoutY="121.0" prefHeight="26.0" prefWidth="242.0" styleClass="input" />
+                              <Button fx:id="updateButton" layoutX="401.0" layoutY="291.0" mnemonicParsing="false" onAction="#performUpdate" opacity="0.88" prefHeight="31.0" prefWidth="134.0" style="-fx-background-color: #009999; -fx-text-fill: white;" styleClass="Button" text="update" />
+                           </children>
+                        </AnchorPane>
+                        <Line endX="487.79998779296875" endY="1.200042724609375" layoutX="274.0" layoutY="368.0" startX="-275.0" startY="1.20001220703125" stroke="#ffe6e6" styleClass="image" />
+                        <AnchorPane layoutX="81.0" layoutY="36.0" prefHeight="319.0" prefWidth="600.0" style="-fx-cursor: hand;" styleClass="card" stylesheets="@../../../StudentMang/src/application/application.css">
+                           <children>
+                              <Label layoutX="99.0" layoutY="26.0" styleClass="labels" text="Student Name">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="104.0" layoutY="68.0" styleClass="labels" text="Course Name">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="95.0" layoutY="116.0" styleClass="labels" text="1st Installment">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="studName" layoutX="257.0" layoutY="26.0" prefHeight="26.0" prefWidth="242.0" styleClass="input" />
+                              <Label layoutX="92.0" layoutY="153.0" styleClass="labels" text="2nd Installment">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="141.0" layoutY="220.0" styleClass="labels" text="Total Fees">
+                                 <font>
+                                    <Font name="Century" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="496.5999755859375" endY="-1.52587890625E-5" layoutX="101.0" layoutY="203.0" startX="-100.0" styleClass="image" />
+                              <Button fx:id="Store" layoutX="257.0" layoutY="264.0" mnemonicParsing="false" onAction="#storePaymentInformation" opacity="0.88" prefHeight="31.0" prefWidth="134.0" style="-fx-background-color: #009999; -fx-text-fill: white;" styleClass="Button" text="Done" />
+                              <TextField fx:id="SInsta" layoutX="257.0" layoutY="153.0" prefHeight="26.0" prefWidth="242.0" styleClass="input" />
+                              <TextField fx:id="TFee" layoutX="257.0" layoutY="220.0" prefHeight="26.0" prefWidth="242.0" styleClass="input" />
+                              <TextField fx:id="CourseName" layoutX="257.0" layoutY="68.0" prefHeight="26.0" prefWidth="242.0" styleClass="input" />
+                              <TextField fx:id="FInsta" layoutX="257.0" layoutY="115.0" prefHeight="26.0" prefWidth="242.0" styleClass="input" />
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="81.0" layoutY="1.0" styleClass="labels" text="New Payment :">
+                           <font>
+                              <Font name="Century" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="81.0" layoutY="391.0" styleClass="labels" text="Update Payment Info :">
+                           <font>
+                              <Font name="Century" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

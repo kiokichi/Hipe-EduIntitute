@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HIPEController">
+   <left>
+      <VBox fx:id="sideBar" alignment="CENTER" prefHeight="670.0" prefWidth="228.0" spacing="10.0" styleClass="side-bar" stylesheets="@application.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="53.0" prefWidth="228.0" styleClass="hbox">
+               <children>
+                  <ImageView fitHeight="52.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" styleClass="image">
+                     <image>
+                        <Image url="@png/menu_359427.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" text="HIBE Institution" textFill="#fffefe">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+            <Line endX="100.0" layoutX="140.0" layoutY="596.0" startX="-129.26405334472656" startY="0.5929298400878906" stroke="#ffe6e6" />
+            <HBox layoutX="10.0" layoutY="244.0" prefHeight="53.0" prefWidth="228.0" styleClass="hbox">
+               <children>
+                  <ImageView fitHeight="43.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/bored_7326311.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#SwitchToStudent" prefHeight="26.0" prefWidth="88.0" styleClass="Button" stylesheets="@application.css" text="Student">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="345.0" prefHeight="53.0" prefWidth="228.0" styleClass="hbox">
+               <children>
+                  <ImageView fitHeight="43.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/novel_10558792.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#SwitchToStudent" prefHeight="26.0" prefWidth="86.0" styleClass="Button" stylesheets="@application.css" text="Course">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="372.0" prefHeight="53.0" prefWidth="228.0" styleClass="hbox">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true" styleClass="image">
+                     <image>
+                        <Image url="@png/calendar_9254446.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#SwitchTobatch" prefHeight="26.0" prefWidth="86.0" styleClass="Button" stylesheets="@application.css" text="Batch">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="399.0" prefHeight="53.0" prefWidth="228.0" styleClass="hbox">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/audience_2433188.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="79.0" styleClass="Button" stylesheets="@application.css" text="Staff">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="right-side" stylesheets="@application.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutX="10.0" layoutY="10.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="546.0" style="-fx-background-color: #191D23;">
+               <children>
+                  <Button fx:id="closebutton" mnemonicParsing="false" onAction="#CloseScene" prefHeight="33.0" prefWidth="52.0" styleClass="Button" stylesheets="@application.css">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@png/close_9082315.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="770.0" prefWidth="769.0" spacing="50.0" styleClass="scene">
+               <children>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="131.0" prefWidth="769.0" styleClass="card">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="175.0" layoutX="14.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true" styleClass="image">
+                           <image>
+                              <Image url="@png/calendar.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="currentRunningBatch" layoutX="190.0" layoutY="-2.0" mnemonicParsing="false" onAction="#SwitchToDashBoard" prefHeight="141.0" prefWidth="139.0" style="-fx-font-size: 20;" styleClass="Button" text="Current &#10;Running&#10;Batch&#10;&#10;">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="CourseFeeButton" layoutX="368.0" layoutY="-1.0" mnemonicParsing="false" onAction="#initializeCF" prefHeight="144.0" prefWidth="139.0" style="-fx-font-size: 20; -fx-background-color: gray;" styleClass="Button" text="All Course&#10;Fees&#10;">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="539.0" layoutY="-1.0" mnemonicParsing="false" onAction="#SwitchToFeespayment" prefHeight="144.0" prefWidth="139.0" style="-fx-font-size: 20;" styleClass="Button" text="Student&#10;payment&#10;">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Button>
+                        <Line endX="485.79998779296875" endY="-1.52587890625E-5" layoutX="259.0" layoutY="123.0" startX="-82.40000915527344" startY="-1.52587890625E-5" stroke="#efe8e8" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <AnchorPane layoutX="20.0" layoutY="198.0" prefHeight="553.0" prefWidth="758.0" styleClass="card">
+                     <children>
+                        <TableView fx:id="CourseFeeTable" layoutX="-3.0" prefHeight="558.0" prefWidth="760.0">
+                          <columns>
+                            <TableColumn fx:id="Sr" prefWidth="75.0" text="Sr" />
+                            <TableColumn fx:id="CourseN" prefWidth="321.59996795654297" text="Course_Name" />
+                              <TableColumn fx:id="Fee" prefWidth="360.7999572753906" text="Fees" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
